@@ -1,0 +1,395 @@
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: 0;
+}
+@font-face{
+    font-family: vaovao;
+    src: url(../fontawesome-free-6.2.0-web/Nouveaufont/MarckScript-Regular.ttf);
+}
+@font-face {
+    font-family: inconsolata;
+    src: url(../fontawesome-free-6.2.0-web/Nouveaufont/Inconsolata-VariableFont_wdth\,wght.ttf);
+}
+@font-face {
+    font-family: nav;
+    src: url(../fontawesome-free-6.2.0-web/Nouveaufont/JosefinSans-Italic-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: pacifico;
+    src: url(../fontawesome-free-6.2.0-web/Nouveaufont/Pacifico-Regular.ttf);
+}
+@font-face {
+    font-family: hafa;
+    src: url(../fontawesome-free-6.2.0-web/Nouveaufont/Aclonica-Regular.ttf);
+}
+body{
+  background: rgba(241, 240, 240, 0.7);
+  /* height: 35vw; */
+  /* overflow: hidden; */
+}
+header{
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+}
+header .style{
+    display: flex;
+    justify-content:start;
+    background-color:white;
+    height: 5vw;
+    width: 100%;
+}
+header .style .logo {
+    display: flex;
+    flex-direction: row;
+    height: 5vw;
+    left: 4.5vw;
+    margin-left:5vw;
+    padding: 0 1vw 0 0.5vw;
+}
+header .style .sary{
+    display: flex;
+    justify-content: center;
+    background: rgb(23, 23, 31);
+    width: 4.5vw;
+    height: 4vw;
+    border-radius: 50%;
+    margin-top: 0.6vw;
+}
+header .style .logo img{
+    width: 2vw;
+    height: 3vw;
+    transform: rotate(12deg);
+    padding-top: 0.3vw;
+}
+header .style .dynam{
+    font-family: vaovao;
+    font-size: 3vw;
+    color:rgb(23, 23, 31);
+    margin-left: -1.7vw;
+    margin-top: 0.9vw;
+    word-spacing: -1vw;
+}
+header .style .dynam span{
+    color: white;
+}
+.section1 .menu{
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    background: rgb(23, 23, 31) ;
+    transition: 0.5s ease-in-out;
+}
+.section1 .menu .mivalona{
+    display: flex;
+    flex-direction:row ;
+    align-items: center;
+    justify-content: center;
+    border-bottom:0.0002vw  solid aliceblue;
+    margin-bottom: 2vw;
+    height: 5vw;
+    background: rgb(35, 35, 43) ;
+}
+.section1 .menu .mivalona #i1{
+    display: block;
+    font-size: 2vw;
+    color: whitesmoke;
+    transition: 0.5s ease-in;
+
+}
+.section1 .menu .mivalona #i1:hover{
+    color: rgb(252, 115, 144);
+}
+.section1 .menu nav ul li{
+    display: block;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    height: 4vw;
+    align-items: center;
+    justify-content: center;
+    transition: margin 0.7s ease-in-out;
+}
+.section1 .menu nav  ul li:hover a{
+    color: black;
+    font-weight: bold;
+    background: rgb(243, 247, 250);
+    transition: 0.05s;
+}
+.section1 .menu nav ul li a{
+    display: flex;
+    flex-direction: row !important;
+    align-items: center;
+    justify-content: center;
+    display: block;
+    color: white;
+    font-size: 1.5vw;
+    font-family: inconsolata;
+    text-decoration: none;
+    border-radius: 1vw;
+    transition: 0.5s ease-in-out; 
+    padding: 0.7vw;
+}
+
+.section1 .menu .profil{
+    background: rgb(35, 35, 43) ;
+    display: flex;
+    width: 100%;
+    height: 5vw;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10vw;
+}
+.section1 .menu .profil img{
+    display: block;
+    width: 4vw;
+    height: 4vw;
+    border-radius: 50%;
+    padding: 0 0.5vw 0 0.5vw;
+    z-index: 2;
+    transition: 0.5s ease-in-out;
+}
+.section1 .menu .deconnecter{
+    display: flex;
+    flex-direction: row !important;
+    align-items: center;
+    justify-content: center;
+    display: block;
+    color: white;
+    font-size: 1.5vw;
+    width: 3vw;
+    font-family: inconsolata;
+    text-decoration: none;
+    border-radius: 1vw;
+    transition: 0.5s ease-in-out; 
+    padding: 0.7vw 0 0.7vw 0;
+    margin-top: 1.5vw;
+    margin-left: 1.25vw;
+    margin-bottom: 1.5vw;
+}
+.section1 .menu .deconnecter i{
+    margin-left: 0.5vw;
+}
+.section1 .menu .deconnecter:hover{
+        color: black;
+        font-weight: bold;
+        background: rgb(223, 85, 85);
+}
+.section1 .absolute{
+    position: absolute;
+    left: 5.5vw;
+    margin-top: 1.4vw;
+}
+.section1 .absolute p{
+    /* visibility: hidden; */
+    /* display: flex; */
+    display: none;
+    align-items: center;
+    justify-content: center;
+    font-size:1.7vw ;
+    font-family:nav;
+    background: white;
+    border-radius: 0.5vw;
+    margin-top: 1.5vw;
+    height: 2.5vw;
+    width: auto;
+    word-spacing: -0.2vw;
+    padding: 0 1vw 0 1vw;
+    color:rgb(23, 23, 31);
+}
+.section2{
+    position: absolute;
+    top: 0;
+    z-index: 3;
+    left:0;
+    transition: 0.5s ease-in;
+}
+.section2 .menu2{
+    display: flex;
+    flex-direction: column;
+    background: rgb(23, 23, 31) ;
+    z-index: 3;
+    transition: 0.5s ease-in-out;
+}
+
+.section2 .menu2 .mivalona{
+    display: flex;
+    flex-direction:row ;
+    align-items: center;
+    border-bottom:0.0002vw  solid aliceblue;
+    margin-bottom: 2vw;
+    height: 5vw;
+    background: rgb(35, 35, 43) ;
+}
+.section2 .menu2 .mivalona #i2{
+    font-size: 2vw;
+    color: whitesmoke;
+    margin:0.4vw 0.5vw 0vw 2.5vw;
+    transform: rotate(180deg);
+    transition: color 0.5s ease-in-out;
+}
+.section2 .menu2 .mivalona #i2:hover{
+        color: rgb(252, 115, 144);
+}
+.section2 .menu2.mivalona #i1:hover{
+    color: rgb(252, 115, 144);
+}
+.section2 .menu2.mivalona #i1{
+    position: absolute;
+    font-size: 2vw;
+    color: whitesmoke;
+    right: 10vw;
+    top:1.5vw;
+    transition: color 0.5s ease-in;
+
+}
+
+.section2 .menu2 .mivalona .logo{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin: 0vw 0vw 0vw 1vw;
+    transition: 1s;
+
+}
+.section2 .menu2 .mivalona .logo .sary{
+    display: flex;
+    justify-content: center;
+    background:aliceblue;
+    width: 4.5vw;
+    height: 4vw;
+    border-radius: 50%;
+}
+.section2 .menu2 .mivalona .logo .sary img{
+    width: 2vw;
+    height: 3vw;
+    transform: rotate(12deg);
+    padding-top: 0.3vw;
+}
+.section2 .menu2 .mivalona .logo .dynam{
+    font-family: vaovao;
+    font-size: 3vw;
+    color:aliceblue;
+    margin-left: -1.7vw;
+    margin-top: 0.3vw;
+    word-spacing: -0.7vw;
+}
+.section2 .menu2 .mivalona .logo .dynam span{
+    color: rgb(23, 23, 31);
+}
+
+.section2 .menu2 .profil{
+    background: rgb(35, 35, 43) ;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 5vw;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10vw;
+}
+.section2 .menu2 .profil img{
+    width: 4vw;
+    height: 4vw;
+    border-radius: 50%;
+    margin-right: 0.5vw;
+    z-index: 2;
+    transition: 0.5s ease-in-out;
+}
+.section2 .menu2 .profil p{
+    flex-wrap: wrap;
+    text-transform: capitalize;
+    color:antiquewhite;
+    font-family:hafa;
+    font-size: 1.3vw;
+    max-width: 15vw;
+    width: auto;
+    margin: 0%;
+}
+.section2 .menu2 nav  ul li{
+    display: block;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    height: 4vw;
+    width: 80%;
+    align-items: center;
+    margin-bottom: 0.1vw;
+    margin-left: 1vw;
+}
+.section2 .menu2 nav  ul li:hover a{
+    color: black;
+    font-weight: bold;
+    background: rgb(243, 247, 250);
+}
+.section2 .menu2 nav  ul li a{
+    display: flex;
+    flex-direction: row !important;
+    align-items: center;
+    justify-content: center;
+    display: block;
+    height: 100%;
+    width: 100%;
+    color: white;
+    font-size: 1.5vw;
+    font-family: inconsolata;
+    text-decoration: none;
+    padding-left: 1.5vw; 
+    border-radius: 1vw;
+    transition: 0.5s ease-in-out;
+}
+
+.section2 .menu2 nav  ul li a span{
+    display:inline-block;
+    word-spacing: -0.6vw;
+}
+.section2 .menu2 nav  ul li a i{
+    z-index: 2;
+    margin: 1.2vw 1vw 0vw 0vw;
+    display: inline-block;
+}
+.section2 .menu2 .deconnecter {
+    display: flex;
+    flex-direction: row !important;
+    align-items: center;
+    justify-content: center;
+    display: block;
+    height: 4vw;
+    width: 70%;
+    color: white;
+    font-size: 1.6vw;
+    font-family: inconsolata;
+    text-decoration: none;
+    padding-left: 1.5vw; 
+    border-radius: 1vw;
+    transition: 0.5s ease-in-out;
+    margin-top: 1vw;
+    margin-left: 1vw;
+    margin-bottom: 1vw;
+}
+.section2 .menu2 .deconnecter i{
+    margin-top: 1.2vw;
+}
+.section2 .menu2 .deconnecter:hover{
+    color: black;
+    font-weight: bold;
+    background: rgb(223, 85, 85);
+}
+.section2Apres{
+    left: -21% !important;
+}
+.section3{
+}
+.section3 .sary1{
+    background: rgba(245, 59, 59, 0.7) url(../photo/R\ \(1\).jpg);
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon(0 0, 100% 0, 79% 100%, 0% 100%);
+    width: 80%;
+    height: 48.4vw;
+}
